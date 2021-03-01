@@ -59,3 +59,7 @@ The following SDKs are available in C#. We will provide support for other langua
 Learn how to implement different scenarios using stateful bots, such as [answering an incoming call](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html#example-incoming-calls) with either application-hosted or service-hosted media.
 
 For more examples, see the [Communications samples repository](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/index.html).
+
+## Privacy and compliance
+
+In the requests to Graph API, sensitive data should not be in any client side generated ids (such as scenario id or request correlation id) in headers or request body. Those ids will be logged in server side for diagnostics.
